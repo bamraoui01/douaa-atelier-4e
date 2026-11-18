@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#6852a2">
+  <meta name="description" content="Le Campus des Flocons : apprendre en 4e année avec des cours, exercices, défis et un suivi familial local.">
+  <title>Le Campus des Flocons · 4e année</title>
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./content.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a href="#contenu" class="skip-link">Aller au contenu</a>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Navigation principale">
+      <div class="brand"><div class="brand-symbol" aria-hidden="true">✳</div><div><strong>Le Campus<br>des Flocons</strong><span>La classe de Douaa</span></div></div>
+      <div class="sidebar-caption">MON ESPACE</div>
+      <nav id="nav">
+        <a href="#accueil" data-route="accueil" class="nav-item"><span>🏠</span> Mon accueil</a>
+        <a href="#cours" data-route="cours" class="nav-item"><span>📚</span> Mes cours</a>
+        <a href="#examen" data-route="examen" class="nav-item"><span>✏️</span> Examen du jour <small>/20</small></a>
+        <a href="#planning" data-route="planning" class="nav-item"><span>📅</span> Mon planning</a>
+        <a href="#progres" data-route="progres" class="nav-item"><span>🏅</span> Mes réussites</a>
+      </nav>
+      <div class="sidebar-caption sidebar-caption-spaced">CÔTÉ FAMILLE</div>
+      <nav>
+        <a href="#parents" data-route="parents" class="nav-item"><span>📊</span> Tableau des parents</a>
+        <a href="#sauvegarde" data-route="sauvegarde" class="nav-item"><span>💾</span> Sauvegardes</a>
+      </nav>
+      <div class="sidebar-foot"><div class="tiny-snow">❄</div><p>Chaque petit effort<br>fait grandir tes idées.</p><span>Conçu pour apprendre à son rythme.</span></div>
+    </aside>
+    <div class="main-area">
+      <header class="topbar">
+        <div class="topbar-left"><button class="menu-button" data-action="menu" aria-label="Ouvrir le menu">☰</button><span class="eyebrow">MON UNIVERS D’APPRENTISSAGE</span><span class="topbar-dot">•</span><span class="topbar-grade">4e année · Ontario</span></div>
+        <div class="topbar-right"><span id="today-label" class="date-label"></span><div class="avatar" title="Le coin de Douaa">D</div></div>
+      </header>
+      <main id="contenu" tabindex="-1"><div id="view" class="view"><div class="loading">Préparation des flocons…</div></div></main>
+      <footer class="footer"><span>Un cours à la fois, une victoire à la fois ✳</span><span>Contenus complémentaires · Les consignes de l’école restent prioritaires</span></footer>
+    </div>
+  </div>
+  <div id="toast" class="toast" aria-live="polite"></div>
+  <div id="menu-backdrop" class="backdrop" data-action="close-menu"></div>
+  <input id="import-file" type="file" accept=".json,application/json" hidden>
+  <noscript>Ce site a besoin de JavaScript pour afficher les leçons et enregistrer les activités.</noscript>
+</body>
+</html>
